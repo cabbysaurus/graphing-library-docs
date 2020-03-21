@@ -15,7 +15,7 @@ language: julia
                 Install using Julia's <code class="no-padding">Pkg</code> module. From the Julia REPL:
             </p>
 
-            <pre><code>Pkg.clone("https://github.com/plotly/Plotly.jl")</code></pre>
+            <pre><code>Pkg.add("Plotly")</code></pre>
         </div>
     </section>
 
@@ -40,7 +40,7 @@ language: julia
 
             <p >
                It is also possible to save your user credentials for future Julia sessions. In your Julia terminal, enter:
-                <pre><code>Plotly.set_credentials_file({"username"=>"DemoAccount","api_key"=>"lr1c37zw81"})</code></pre>
+                <pre><code>Plotly.set_credentials_file(Dict("username"=>"DemoAccount","api_key"=>"lr1c37zw81"))</code></pre>
             </p>
 
             <p >
@@ -67,7 +67,7 @@ language: julia
 
             <br>
 
-            <pre><code class="julia">Plotly.set_config_file({"plotly_domain"=>"https://plotly.your-company.com", "plotly_api_domain"=>"https://api-plotly.your-company.com"})</code></pre>
+            <pre><code class="julia">Plotly.set_config_file(Dict("plotly_domain"=>"https://plotly.your-company.com", "plotly_api_domain"=>"https://api-plotly.your-company.com"))</code></pre>
 
             <br>
 
